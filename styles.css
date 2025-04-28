@@ -11,6 +11,19 @@ header {
 	text-align: center;
 	padding: 10px 0;
 }
+nav.head {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
 
 h1 {
 	color: #5a189a;

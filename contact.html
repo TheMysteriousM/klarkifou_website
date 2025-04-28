@@ -1,12 +1,32 @@
-<html>
-<h2>Contact</h2>
-    <form action="submit_form.php" method="post">
-        <label for="name">Name :</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Klarkifou</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Ajout du favicon -->
 
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
-        
+</head>
+<body>
+    <header>
+        <h1>Klarkifou : Découvrez le mystère</h1>
+    </header>
+    <nav class="head">
+        <a href="/index.html">Home</a>
+        <a href="/shop.html">Boutique</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/about_us.html">À Propos</a>
+    </nav>
+<div class="contact-container">
+    <h1>Contactez-nous</h1>
+    <form action="mailto:contact@klarkifou.eu" method="POST" enctype="text/plain">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="Nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+
         <label for="reason">Raison :</label>
         <select name="reason" id="reason">
             <option value="choose">Choisissez</option>
@@ -15,17 +35,20 @@
             <option value="other">Autre</option>
         </select><br><br>
         
-        <label for="Message">Message :</label>
-        <input type="text" id="Message" name="Message" placeholder="Décrivez-nous ici votre demande" required><br><br>
-        
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" required></textarea>
+
+        <button type="submit">Envoyer le message</button>
     </form>
+</div>
+</body>
 
 <footer>
     <nav class="footer">
         <a>Last Uptate 01/02/2025</a>
-        <a href="legal.pdf">Legal Mentions</a>
+        <a href="/about.html">Legal Mentions</a>
         <a>Authors : Maxime Pigeau & Romane PICOUET</a>
-        <a href="contact.html">Contact us</a>
+        <a href="/contact.html">Contactez-nous</a>
     </nav>
 </footer>
 

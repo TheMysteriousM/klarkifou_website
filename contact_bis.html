@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klarkifou : Découvrez le mystère</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Ajout du favicon -->
+
+</head>
+<h2>Contact</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="reason">Raison :</label>
+        <select name="reason" id="reason">
+            <option value="choose">Choisissez</option>
+            <option value="clothes">Style vestimentaire</option>
+            <option value="internship">Stage</option>
+            <option value="other">Autre</option>
+        </select><br><br>
+        
+        <label for="Message">Message :</label>
+        <input type="text" id="Message" name="Message" placeholder="Décrivez-nous ici votre demande" required><br><br>
+        
+    </form>
+
+<footer>
+    <nav class="footer">
+        <a>Last Uptate 01/02/2025</a>
+        <a href="/about.html">Legal Mentions</a>
+        <a>Authors : Maxime Pigeau & Romane PICOUET</a>
+        <a href="/contact.html">Contactez-nous</a>
+    </nav>
+</footer>
+
+</html>
